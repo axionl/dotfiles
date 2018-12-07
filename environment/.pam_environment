@@ -1,0 +1,25 @@
+## fcitx5
+GTK_IM_MODULE DEFAULT=fcitx5
+QT_IM_MODULE  DEFAULT=fcitx5
+XMODIFIERS    DEFAULT=@im=fcitx5
+
+## program binary
+# PATH="$HOME/.pyenv/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/lib/ccache/bin/:$PATH"
+
+## make pkg cache
+CCACHE_DIR DEFAULT=/tmp/ccache
+
+## global menu
+SAL_USE_VCLPLUGIN DEFAULT=gtk3
+
+## gtk wayland
+# GDK_BACKEND=wayland
+
+## qt wayland
+# QT_QPA_PLATFORM=wayland-egl
+
+## systemd-git
+DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
+
+## Proxy
+HTTP_PROXY DEFAULT=http://127.0.0.1:9998

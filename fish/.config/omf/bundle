@@ -1,0 +1,9 @@
+package archlinux
+package autojump
+package cd
+package config
+package hash
+package https://github.com/rickh94/fish-nft
+package virtualfish
+theme bobthefish
+theme default

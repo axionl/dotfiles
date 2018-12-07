@@ -1,0 +1,13 @@
+[Unit]
+Description=Convent the socks proxy to http
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+Environment=SOCKS5_PORT=9999
+ExecStart=/usr/bin/gost -L=http://:%I -F=socks5://127.0.0.1:${SOCKS5_PORT}
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

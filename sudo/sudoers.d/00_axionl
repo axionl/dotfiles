@@ -1,0 +1,2 @@
+Defaults:axionl timestamp_timeout=20
+axionl ariel=NOPASSWD: /usr/bin/pacman -Syu,/usr/bin/pacman -Fy,/usr/bin/trash-empty,/usr/bin/ss,/usr/bin/pkgfile,/usr/bin/nft

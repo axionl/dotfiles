@@ -1,0 +1,10 @@
+[user]
+    name = axionl
+    email = i@axionl.me
+    signingkey = 86F797B20DE062D8540D6D243CD72EBFE6DE17D8
+[commit]
+    gpgsign = true
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = "code --wait "
