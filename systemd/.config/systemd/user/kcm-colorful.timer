@@ -1,0 +1,11 @@
+[Unit]
+Description=Change color theme according to daily bing image.
+
+[Timer]
+OnBootSec=10sec
+OnCalendar=daily
+Persistent=true
+Unit=kcm-colorful.service
+
+[Install]
+WantedBy=timers.target
