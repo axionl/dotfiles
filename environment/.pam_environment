@@ -13,10 +13,13 @@ CCACHE_DIR DEFAULT=/tmp/ccache
 SAL_USE_VCLPLUGIN DEFAULT=gtk3
 
 ## gtk wayland
-# GDK_BACKEND=wayland
+# GDK_BACKEND DEFAULT=wayland
+
+## xdg
+# XDG_SESSION_TYPE DEFAULT=wayland
 
 ## qt wayland
-# QT_QPA_PLATFORM=wayland-egl
+# QT_QPA_PLATFORM DEFAULT=wayland-egl
 
 ## systemd-git
 DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
