@@ -2,8 +2,8 @@
 Description=Change color theme according to daily bing image.
 
 [Timer]
-OnBootSec=10sec
-OnCalendar=daily
+OnActiveSec=5sec
+OnCalendar=hourly
 Persistent=true
 Unit=kcm-colorful.service
 
