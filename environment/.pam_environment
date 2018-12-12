@@ -9,6 +9,18 @@ XMODIFIERS    DEFAULT=@im=fcitx5
 ## make pkg cache
 CCACHE_DIR DEFAULT=/tmp/ccache
 
+## systemd-git
+DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
+
+## Proxy
+HTTP_PROXY DEFAULT=http://127.0.0.1:9998
+
+## GTK NOCSD
+GTK_CSD DEFAULT=0
+
+## use plasma dialog as default
+GTK_USE_PORTAL=1
+
 ## global menu
 SAL_USE_VCLPLUGIN DEFAULT=gtk3
 
@@ -21,11 +33,3 @@ SAL_USE_VCLPLUGIN DEFAULT=gtk3
 ## qt wayland
 # QT_QPA_PLATFORM DEFAULT=wayland-egl
 
-## systemd-git
-DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
-
-## Proxy
-HTTP_PROXY DEFAULT=http://127.0.0.1:9998
-
-## GTK NOCSD
-GTK_CSD DEFAULT=0
