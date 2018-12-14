@@ -15,10 +15,10 @@ set -gx SSH_ASKPASS "/usr/bin/ksshaskpass"
 set -gx SUDO_ASKPASS "/usr/bin/ksshaskpass"
 
 # rust
-# set -gx RUSTUP_DIST_SERVER https://mirrors.sjtug.sjtu.edu.cn/rust-static
-# set -gx RUSTUP_UPDATE_ROOT https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
-set -gx RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
-set -gx RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
+set -gx RUSTUP_DIST_SERVER https://mirrors.sjtug.sjtu.edu.cn/rust-static
+set -gx RUSTUP_UPDATE_ROOT https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
+# set -gx RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
+# set -gx RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
 # PATH
 set -gx PATH "$HOME/.pyenv/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin:$HOME/go/bin:/usr/lib/ccache/bin/:$PATH"

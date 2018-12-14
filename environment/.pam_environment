@@ -15,6 +15,9 @@ DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
 ## Proxy
 HTTP_PROXY DEFAULT=http://127.0.0.1:9998
 
+## Wine
+WINEARCH DEFAULT=win32
+
 ## GTK NOCSD
 GTK_CSD DEFAULT=0
 
@@ -32,4 +35,3 @@ SAL_USE_VCLPLUGIN DEFAULT=gtk3
 
 ## qt wayland
 # QT_QPA_PLATFORM DEFAULT=wayland-egl
-
