@@ -10,10 +10,10 @@ XMODIFIERS    DEFAULT=@im=fcitx5
 CCACHE_DIR DEFAULT=/tmp/ccache
 
 ## systemd-git
-DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
+# DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
 
 ## Proxy
-HTTP_PROXY DEFAULT=http://127.0.0.1:9998
+# HTTP_PROXY DEFAULT=http://127.0.0.1:9998
 
 ## Wine
 # WINEARCH DEFAULT=win32

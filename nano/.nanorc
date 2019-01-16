@@ -13,4 +13,4 @@ set titlecolor white,normal
 set selectedcolor cyan,normal
 set numbercolor blue,normal
 set boldtext
-set softwrap
+# set softwrap
