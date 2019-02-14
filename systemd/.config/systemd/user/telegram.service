@@ -6,7 +6,7 @@ Wants=network.target
 [Service]
 Type=oneshot
 MemoryMax=500M
-MemoryHigh=450M
+MemoryHigh=499M
 ExecStart=telegram-desktop -- %u
 #RemainAfterExit=yes
 

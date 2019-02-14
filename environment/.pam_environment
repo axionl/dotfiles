@@ -22,7 +22,7 @@ CCACHE_DIR DEFAULT=/tmp/ccache
 GTK_CSD DEFAULT=0
 
 ## use plasma dialog as default
-GTK_USE_PORTAL=1
+# GTK_USE_PORTAL=1
 
 ## global menu
 SAL_USE_VCLPLUGIN DEFAULT=kde5
