@@ -1,7 +1,7 @@
 ## loading functions
 source ~/.config/fish/functions/*.fish
 source /usr/share/doc/pkgfile/command-not-found.fish
-# blurk
+blurk
 # tmux_init
 welcome
 
