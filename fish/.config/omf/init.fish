@@ -2,7 +2,7 @@
 source ~/.config/fish/functions/*.fish
 source /usr/share/doc/pkgfile/command-not-found.fish
 blurk
-# tmux_init
+tmux_init
 welcome
 
 ## hidpi
