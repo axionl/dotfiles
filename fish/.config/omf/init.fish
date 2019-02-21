@@ -24,7 +24,7 @@ set -gx RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -gx RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
 ## PATH
-# set -gx PATH "$HOME/.pyenv/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin:$HOME/go/bin:/usr/lib/ccache/bin/:$PATH"
+set -gx PATH "$HOME/.pyenv/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin:$HOME/go/bin:/usr/lib/ccache/bin/:$PATH"
 
 ## pyenv
 status --is-interactive; and source (pyenv init -|psub)
