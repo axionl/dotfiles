@@ -4,7 +4,7 @@ Language=
 Label=trans
 
 [keyboard-eu]
-Description="键盘 - EurKEY (US based layout with european letters)"
+Description="键盘 - EurKEY (US based layout with European letters)"
 Language=ca
 Label=eu
 
@@ -64,8 +64,8 @@ Language=fil
 Label=ph
 
 [keyboard-ph-dvorak-bay]
-Description="键盘 - 菲律宾语 - Filipino (Dvorak, Baybayin)"
-Language=fil
+Description="键盘 - 菲律宾语 - pino (Dvorak, Baybayin)"
+Language=bik
 Label=ph
 
 [keyboard-bw]
@@ -143,8 +143,18 @@ Description="键盘 - Braille - Braille (left-handed)"
 Language=
 Label=brai
 
+[keyboard-brai-left_hand_invert]
+Description="键盘 - Braille - Braille (left-handed inverted thumb)"
+Language=
+Label=brai
+
 [keyboard-brai-right_hand]
 Description="键盘 - Braille - Braille (right-handed)"
+Language=
+Label=brai
+
+[keyboard-brai-right_hand_invert]
+Description="键盘 - Braille - Braille (right-handed inverted thumb)"
 Language=
 Label=brai
 
@@ -346,6 +356,11 @@ Label=gb
 [keyboard-gb-colemak]
 Description="键盘 - 英语（英国） - 英语（英国，阔码布局）"
 Language=en
+Label=gb
+
+[keyboard-gb-pl]
+Description="键盘 - 英语（英国） - Polish (British keyboard)"
+Language=pl
 Label=gb
 
 [keyboard-gb-sun_type6]
@@ -814,7 +829,7 @@ Language=ka
 Label=fr
 
 [keyboard-fr-us]
-Description="键盘 - 法语 - French (US keyboard with French letters)"
+Description="键盘 - 法语 - French (US, with French letters)"
 Language=fr
 Label=fr
 
@@ -825,6 +840,11 @@ Label=fr
 
 [keyboard-fr-us-alt]
 Description="键盘 - 法语 - French (US, with French letters, with dead keys, alternative)"
+Language=fr
+Label=fr
+
+[keyboard-fr-us-azerty]
+Description="键盘 - 法语 - French (US, AZERTY)"
 Language=fr
 Label=fr
 
@@ -919,7 +939,7 @@ Language=en
 Label=us
 
 [keyboard-us-intl]
-Description="键盘 - 英语（美国） - English (US, intl., with dead keys)"
+Description="键盘 - 英语（美国） - intl., with dead keys)"
 Language=en
 Label=us
 
@@ -1314,42 +1334,42 @@ Language=lt
 Label=lt
 
 [keyboard-me]
-Description="键盘 - tenegrin"
+Description="键盘 - 黑山语"
 Language=sr
 Label=me
 
 [keyboard-me-cyrillic]
-Description="键盘 - tenegrin - 黑山语(西里尔)"
+Description="键盘 - 黑山语 - 黑山语(西里尔)"
 Language=sr
 Label=me
 
 [keyboard-me-cyrillicyz]
-Description="键盘 - tenegrin - Montenegrin (Cyrillic, ZE and ZHE swapped)"
+Description="键盘 - 黑山语 - Montenegrin (Cyrillic, ZE and ZHE swapped)"
 Language=sr
 Label=me
 
 [keyboard-me-latinunicode]
-Description="键盘 - tenegrin - Montenegrin (Latin, Unicode)"
+Description="键盘 - 黑山语 - Montenegrin (Latin, Unicode)"
 Language=sr
 Label=me
 
 [keyboard-me-latinyz]
-Description="键盘 - tenegrin - Montenegrin (Latin, QWERTY)"
+Description="键盘 - 黑山语 - Montenegrin (Latin, QWERTY)"
 Language=sr
 Label=me
 
 [keyboard-me-latinunicodeyz]
-Description="键盘 - tenegrin - Montenegrin (Latin, Unicode, QWERTY)"
+Description="键盘 - 黑山语 - Montenegrin (Latin, Unicode, QWERTY)"
 Language=sr
 Label=me
 
 [keyboard-me-cyrillicalternatequotes]
-Description="键盘 - tenegrin - Montenegrin (Cyrillic with guillemets)"
+Description="键盘 - 黑山语 - Montenegrin (Cyrillic with guillemets)"
 Language=sr
 Label=me
 
 [keyboard-me-latinalternatequotes]
-Description="键盘 - tenegrin - Montenegrin (Latin with guillemets)"
+Description="键盘 - 黑山语 - Montenegrin (Latin with guillemets)"
 Language=sr
 Label=me
 
@@ -1390,7 +1410,7 @@ Label=af
 
 [keyboard-af-olpc-ps]
 Description="键盘 - 阿富汗 - Pashto (Afghanistan, OLPC)"
-Language=
+Language=ps
 Label=af
 
 [keyboard-af-fa-olpc]
@@ -1585,7 +1605,7 @@ Label=ir
 
 [keyboard-ir-ku_ara]
 Description="键盘 - 波斯语 - 库尔德语(伊朗，阿拉伯-拉丁)"
-Language=ku
+Language=
 Label=ir
 
 [keyboard-ir-ave]
@@ -1914,12 +1934,12 @@ Language=ja
 Label=jp
 
 [keyboard-jp-sun_type6]
-Description="键盘 - 日语 - Japanese (Sun Type 6)"
+Description="键盘 - 日语 - (Sun Type 6)"
 Language=ja
 Label=jp
 
 [keyboard-jp-sun_type7]
-Description="键盘 - 日语 - e (Sun Type 7 - pc compatible)"
+Description="键盘 - 日语 - Japanese (Sun Type 7 - pc compatible)"
 Language=ja
 Label=jp
 
@@ -1948,7 +1968,7 @@ Description="键盘 - 希腊语 - 希腊语（无死键）"
 Language=el
 Label=gr
 
-[keyboard-gr-polytonic]
+[keyboard-gr-nic]
 Description="键盘 - 希腊语 - Greek (polytonic)"
 Language=el
 Label=gr
@@ -2358,6 +2378,11 @@ Description="键盘 - 葡萄牙语 - Portuguese (Sun Type 6/7)"
 Language=pt
 Label=pt
 
+[keyboard-pt-colemak]
+Description="键盘 - 葡萄牙语 - Portuguese (Colemak)"
+Language=pt
+Label=pt
+
 [keyboard-ee]
 Description="键盘 - 爱沙尼亚"
 Language=et
@@ -2500,6 +2525,16 @@ Label=latam
 
 [keyboard-latam-dvorak]
 Description="键盘 - 西班牙语(拉丁美洲) - Spanish (Latin American, Dvorak)"
+Language=es
+Label=latam
+
+[keyboard-latam-colemak]
+Description="键盘 - 西班牙语(拉丁美洲) - Spanish (Latin American, Colemak)"
+Language=es
+Label=latam
+
+[keyboard-latam-colemak-gaming]
+Description="键盘 - 西班牙语(拉丁美洲) - Spanish (Latin American, Colemak for gaming)"
 Language=es
 Label=latam
 
@@ -2735,6 +2770,11 @@ Label=ru
 
 [keyboard-ru-phonetic_winkeys]
 Description="键盘 - 俄语 - Russian (phonetic, with Win keys)"
+Language=ru
+Label=ru
+
+[keyboard-ru-phonetic_yazherty]
+Description="键盘 - 俄语 - Russian (phonetic yazherty)"
 Language=ru
 Label=ru
 
