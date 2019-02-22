@@ -1,4 +1,4 @@
 # Defined in - @ line 0
-function open --description 'alias open xdg-open'
-	xdg-open  $argv;
+function open --wraps kde-open5 --description 'alias open xdg-open'
+	kde-open5  $argv;
 end
