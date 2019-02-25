@@ -3,9 +3,6 @@ GTK_IM_MODULE DEFAULT=fcitx5
 QT_IM_MODULE  DEFAULT=fcitx5
 XMODIFIERS    DEFAULT=@im=fcitx5
 
-## program binary
-# PATH="$HOME/.pyenv/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:/usr/lib/ccache/bin/:$PATH"
-
 ## make pkg cache
 CCACHE_DIR DEFAULT=/tmp/ccache
 
@@ -25,7 +22,7 @@ GTK_CSD DEFAULT=0
 # GTK_USE_PORTAL=1
 
 ## global menu
-SAL_USE_VCLPLUGIN DEFAULT=kde5
+#SAL_USE_VCLPLUGIN DEFAULT=gtk3_kde5
 
 ## gtk wayland
 # GDK_BACKEND DEFAULT=wayland
