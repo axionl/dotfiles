@@ -8,3 +8,7 @@
     tool = vscode
 [mergetool "vscode"]
     cmd = "code --wait "
+[url "https://anongit.kde.org/"]
+    insteadOf = kde:
+[url "git@git.kde.org:"]
+    pushInsteadOf = kde:
