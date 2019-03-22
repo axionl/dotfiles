@@ -7,9 +7,8 @@ Wants=network.target
 Type=oneshot
 MemoryMax=500M
 MemoryHigh=499M
-WorkingDirectory=/home/axionl/Download/TelegramDesktop
-ExecStart=telegram-desktop -- %u
-#RemainAfterExit=yes
+ExecStart=telegram-desktop -many -workdir ~/Download/TelegramDesktop/%i -- %u
+RemainAfterExit=yes
 
 [Install]
 WantedBy=default.target
