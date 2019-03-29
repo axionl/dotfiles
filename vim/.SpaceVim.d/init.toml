@@ -37,6 +37,30 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[[layers]]
+name = "lang#python"
+
+[[layers]]
+name = "lang#go"
+
+[[layers]]
+name = "lang#kotlin"
+
+[[layers]]
+name = "lang#latex"
+
+[[layers]]
+name = "lang#markdown"
+
+[[layers]]
+name = "lang#rust"
+
+[[layers]]
+name = "tools"
+
+[[layers]]
+name = "ui"
+
 [[custom_plugins]]
 name = "lilydjwg/colorizer"
 name = "racer-rust/vim-racer"
