@@ -25,3 +25,7 @@ set -gx RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
 ## PATH
 #set -gx PATH "~/.cargo/bin:~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin:~/go/bin"
+
+## golang
+set -gx GOPATH ~/go
+set -gx HTTP_PROXY http://127.0.0.1:9995

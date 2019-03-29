@@ -12,3 +12,7 @@
     insteadOf = kde:
 [url "git@git.kde.org:"]
     pushInsteadOf = kde:
+[core]
+    editor = vim
+[http]
+    proxy = http://127.0.0.1:9995
