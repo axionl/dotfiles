@@ -2,8 +2,8 @@
 source ~/.config/fish/functions/*.fish
 source /usr/share/doc/pkgfile/command-not-found.fish
 blurk
-tmux_init
-welcome
+# tmux_init
+# welcome
 
 ## hidpi
 # set -gx QT_SCREEN_SCALE_FACTORS 1
