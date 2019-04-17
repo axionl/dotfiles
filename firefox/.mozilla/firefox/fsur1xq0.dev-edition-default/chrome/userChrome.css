@@ -7,3 +7,8 @@
 #sidebar-header {
     visibility: collapse !important;
 }
+
+:root.left #tabbar {
+    direction: ltr;
+    overflow-x: hidden;
+}
