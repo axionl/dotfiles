@@ -22,7 +22,7 @@ GTK_CSD DEFAULT=0
 # GTK_USE_PORTAL=1
 
 ## libreoffice render
-SAL_USE_VCLPLUGIN DEFAULT=gtk3_kde5
+#SAL_USE_VCLPLUGIN DEFAULT=gtk3_kde5
 
 ## gtk wayland
 # GDK_BACKEND DEFAULT=wayland
