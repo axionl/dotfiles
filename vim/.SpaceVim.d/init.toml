@@ -67,4 +67,5 @@ name = "racer-rust/vim-racer"
   racer_cmd = "usr/bin/racer"
   racer_experimental_completer = 1
 name = "joshdick/onedark.vim"
+# name = "myitcv/govim"
 merged = 0
