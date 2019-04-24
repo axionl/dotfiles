@@ -1,0 +1,39 @@
+[1]
+Description=Shadows for netease-cloud-music
+clientmachine=localhost
+clientmachinematch=0
+noborder=false
+noborderrule=2
+title=如果我变成回忆(吉他女版)（Cover：Tank） - Clever勺子 — Cloud Music
+titlematch=0
+types=1
+wmclass=netease-cloud-music
+wmclasscomplete=true
+wmclassmatch=2
+
+[2]
+Description=Shadows for yakuake
+clientmachine=localhost
+clientmachinematch=0
+noborder=false
+noborderrule=2
+title=yakuake-breeze_perfect : fish — Yakuake
+titlematch=0
+wmclass=yakuake yakuake
+wmclasscomplete=true
+wmclassmatch=1
+
+[3]
+Description=Shadows for tauon
+clientmachine=localhost
+clientmachinematch=0
+noborder=false
+noborderrule=2
+title=Tauon Music Box
+titlematch=0
+wmclass=tauon music box tauon music box
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=3
