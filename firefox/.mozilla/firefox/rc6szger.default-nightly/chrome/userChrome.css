@@ -1,0 +1,14 @@
+/* to hide the native tabs */
+#TabsToolbar {
+    visibility: collapse !important;
+}
+
+/* to hide the sidebar header */
+#sidebar-header {
+    visibility: collapse !important;
+}
+
+:root.left #tabbar {
+    direction: ltr;
+    overflow-x: hidden;
+}
