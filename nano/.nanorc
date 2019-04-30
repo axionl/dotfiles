@@ -12,3 +12,4 @@ set softwrap
 set suspend
 set regexp
 set linenumbers
+set breaklonglines
