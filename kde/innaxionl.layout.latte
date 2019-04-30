@@ -113,11 +113,12 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][13][Applets][42][Configuration]
-PreloadWeight=30
+PreloadWeight=26
 
 [Containments][13][Applets][42][Configuration][Appearance]
 displayTimezoneAsCode=false
 enabledCalendarPlugins=/usr/lib/qt/plugins/plasmacalendarplugins/pimevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/astronomicalevents.so
+pin=true
 showDate=true
 showSeconds=true
 showWeekNumbers=true
@@ -186,7 +187,7 @@ immutability=1
 plugin=org.kde.windowbuttons
 
 [Containments][13][Applets][48][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][13][Applets][48][Configuration][ConfigDialog]
 DialogHeight=600
@@ -204,14 +205,14 @@ immutability=1
 plugin=org.kde.netspeedWidget
 
 [Containments][13][Applets][49][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][13][Applets][50]
 immutability=1
 plugin=com.github.zren.githubissues
 
 [Containments][13][Applets][50][Configuration]
-PreloadWeight=14
+PreloadWeight=0
 
 [Containments][13][Applets][50][Configuration][ConfigDialog]
 DialogHeight=540
@@ -277,26 +278,12 @@ plugin=org.kde.plasma.clipboard
 [Containments][14][Applets][52][Configuration]
 PreloadWeight=0
 
-[Containments][14][Applets][53]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
-
-[Containments][14][Applets][53][Configuration]
-PreloadWeight=0
-
-[Containments][14][Applets][54]
-immutability=1
-plugin=org.kde.plasma.battery
-
-[Containments][14][Applets][54][Configuration]
-PreloadWeight=0
-
 [Containments][14][Applets][55]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][14][Applets][55][Configuration]
-PreloadWeight=10
+PreloadWeight=5
 
 [Containments][14][Applets][56]
 immutability=1
@@ -317,7 +304,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][14][Applets][58][Configuration]
-PreloadWeight=19
+PreloadWeight=5
 
 [Containments][14][Applets][59]
 immutability=1
@@ -325,6 +312,17 @@ plugin=org.kde.plasma.volume
 
 [Containments][14][Applets][59][Configuration]
 PreloadWeight=0
+
+[Containments][14][Applets][77]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][14][Applets][77][Configuration]
+PreloadWeight=0
+
+[Containments][14][Applets][86]
+immutability=1
+plugin=org.kde.plasma.battery
 
 [Containments][14][ConfigDialog]
 DialogHeight=540
@@ -345,26 +343,16 @@ location=3
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
-[Containments][15][Applets][60]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
-
-[Containments][15][Applets][60][Configuration]
-PreloadWeight=0
-
-[Containments][15][Applets][61]
-immutability=1
-plugin=org.kde.plasma.battery
-
-[Containments][15][Applets][61][Configuration]
-PreloadWeight=0
-
 [Containments][15][Applets][62]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][15][Applets][62][Configuration]
-PreloadWeight=0
+PreloadWeight=16
+
+[Containments][15][Applets][62][Configuration][ConfigDialog]
+DialogHeight=731
+DialogWidth=800
 
 [Containments][15][Applets][63]
 immutability=1
@@ -385,21 +373,21 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][15][Applets][65][Configuration]
-PreloadWeight=0
+PreloadWeight=100
 
 [Containments][15][Applets][66]
 immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][15][Applets][66][Configuration]
-PreloadWeight=29
+PreloadWeight=15
 
 [Containments][15][Applets][67]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][15][Applets][67][Configuration]
-PreloadWeight=14
+PreloadWeight=0
 
 [Containments][15][Applets][67][Configuration][ConfigDialog]
 DialogHeight=600
@@ -410,7 +398,18 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][15][Applets][68][Configuration]
-PreloadWeight=39
+PreloadWeight=35
+
+[Containments][15][Applets][76]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][15][Applets][76][Configuration]
+PreloadWeight=0
+
+[Containments][15][Applets][85]
+immutability=1
+plugin=org.kde.plasma.battery
 
 [Containments][15][ConfigDialog]
 DialogHeight=540
@@ -465,7 +464,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][16][Applets][70][Configuration]
-PreloadWeight=29
+PreloadWeight=15
 SystrayContainmentId=14
 
 [Containments][16][Applets][71]
@@ -475,12 +474,16 @@ plugin=org.kde.plasma.appmenu
 [Containments][16][Applets][71][Configuration]
 PreloadWeight=0
 
+[Containments][16][Applets][71][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
 [Containments][16][Applets][72]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][16][Applets][72][Configuration]
-PreloadWeight=14
+PreloadWeight=15
 
 [Containments][16][Applets][72][Configuration][Appearance]
 displayTimezoneAsCode=false
@@ -523,6 +526,50 @@ plugin=audoban.applet.separator
 [Containments][16][Applets][75][Configuration]
 PreloadWeight=34
 
+[Containments][16][Applets][78][Configuration][General]
+sources=mem%2Fphysical%2Fapplication
+
+[Containments][16][Applets][79][Configuration][General]
+sources=cpu%2Fsystem%2FTotalLoad
+
+[Containments][16][Applets][80][Configuration][General]
+sensorModel=[\n  {\n    "sensors": [\n      "system/cores"\n    ]\n  }\n]
+
+[Containments][16][Applets][82][Configuration][config]
+label=mem
+max_value=16330816
+monitor_type=1
+multiplier=1000
+
+[Containments][16][Applets][82][Configuration][sources]
+colors=limegreen,green
+labels=,,
+last_filter=mem/physical
+names=sys.mem/physical/application,sys.mem/physical/used
+
+[Containments][16][Applets][83][Configuration][config]
+label=mem
+max_value=16330816
+monitor_type=1
+multiplier=1000
+
+[Containments][16][Applets][83][Configuration][sources]
+colors=green
+labels=,,
+last_filter=mem/physical
+names=sys.mem/physical/used
+
+[Containments][16][Applets][84]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.memory
+
+[Containments][16][Applets][84][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
+[Containments][16][Applets][84][Configuration][General]
+sources=mem%2Fphysical%2Fapplication
+
 [Containments][16][ConfigDialog]
 DialogHeight=970
 DialogWidth=584
@@ -533,7 +580,7 @@ PreloadWeight=0
 [Containments][16][General]
 activeIndicator=None
 advanced=true
-appletOrder=71;72;70;69
+appletOrder=71;72;84;70;69
 autoDecreaseIconSize=false
 iconMargin=25
 iconSize=20
