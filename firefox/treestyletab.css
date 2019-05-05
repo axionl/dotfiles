@@ -51,6 +51,8 @@
   z-index: unset !important;
 }
 
+/* Tab counts in new tab button */
+
 .tab .extra-items-container::after {
   background: Highlight;
   color: HighlightText;
@@ -63,4 +65,17 @@
   top: 0.2em;
 
   z-index: 1000;
+}
+
+.newtab-button::after {
+  content: var(--tab-count-text);
+  pointer-events: none;
+  position: absolute;
+  right: 2.2em;
+  background: transparent !important;
+  mask: none !important;
+}
+
+.newtab-button {
+  --tab-count-text: counter(tabs) " tabs";
 }
