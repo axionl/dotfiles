@@ -1,0 +1,46 @@
+/* Highlight active tab */
+
+.tab.active {
+  height: 39px !important;
+  background-color: #b0c7cf;
+}
+
+.tab.active .label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tab.active .twisty,
+.tab.active .label,
+.tab.active .counter {
+  color: #ffffff;
+}
+
+/* Hovered tab */
+
+.tab:hover {
+  background: #d0ebf4 !important;
+  opacity: 1;
+}
+
+/* Tab numbering and counting */
+
+#tabbar {
+  counter-reset: vtabs atabs tabs;
+}
+
+.tab:not(.collapsed):not(.discarded) {
+  counter-increment: vtabs atabs tabs;
+}
+
+.tab:not(.collapsed) {
+  counter-increment: vtabs tabs;
+}
+
+.tab:not(.discarded) {
+  counter-increment: atabs tabs;
+}
+
+.tab {
+  counter-increment: tabs;
+}
