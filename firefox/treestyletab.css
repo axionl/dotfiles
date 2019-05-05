@@ -44,3 +44,23 @@
 .tab {
   counter-increment: tabs;
 }
+
+/* Numbering of tabs */
+
+.tab .extra-items-container {
+  z-index: unset !important;
+}
+
+.tab .extra-items-container::after {
+  background: Highlight;
+  color: HighlightText;
+  content: counter(vtabs);
+  font-size: x-small;
+  left: 0.2em;
+  padding: 0.2em;
+  pointer-events: none;
+  position: absolute;
+  top: 0.2em;
+
+  z-index: 1000;
+}
