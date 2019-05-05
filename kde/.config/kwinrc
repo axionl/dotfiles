@@ -31,9 +31,13 @@ zPosition=209
 BorderActivate=9
 BorderActivateCylinder=9
 BorderActivateSphere=9
+TouchBorderActivate=9
+TouchBorderActivateCylinder=9
+TouchBorderActivateSphere=9
 
 [Effect-DesktopGrid]
 BorderActivate=9
+TouchBorderActivate=9
 
 [Effect-FlipSwitch]
 TabBox=false
@@ -43,6 +47,9 @@ TabBoxAlternative=false
 BorderActivate=9
 BorderActivateAll=7
 BorderActivateClass=9
+TouchBorderActivate=9
+TouchBorderActivateAll=7
+TouchBorderActivateClass=9
 
 [Effect-kwin4_effect_translucency]
 ComboboxPopups=96
@@ -51,13 +58,13 @@ Menus=96
 
 [ElectricBorders]
 Bottom=None
-BottomLeft=ApplicationLauncher
-BottomRight=ShowDesktop
+BottomLeft=None
+BottomRight=None
 Left=None
 Right=None
 Top=None
 TopLeft=None
-TopRight=KRunner
+TopRight=None
 
 [ModifierOnlyShortcuts]
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
@@ -109,6 +116,7 @@ windowgeometryEnabled=true
 
 [Script-activatelattelaunchermenu]
 BorderActivate=9
+TouchBorderActivate=9
 
 [Script-desktopchangeosd]
 PopupHideDelay=1000
@@ -129,6 +137,8 @@ MultiScreenMode=0
 ShowDesktopMode=0
 ShowTabBox=true
 SwitchingMode=0
+TouchBorderActivate=9
+TouchBorderAlternativeActivate=9
 
 [TabBoxAlternative]
 ActivitiesMode=1
@@ -141,6 +151,12 @@ MultiScreenMode=0
 ShowDesktopMode=0
 ShowTabBox=true
 SwitchingMode=0
+
+[TouchEdges]
+Bottom=None
+Left=None
+Right=None
+Top=None
 
 [Windows]
 ActiveMouseScreen=false

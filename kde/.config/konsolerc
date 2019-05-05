@@ -17,13 +17,13 @@ ShowMenuBarByDefault=false
 ShowWindowTitleOnTitleBar=true
 
 [MainWindow]
-Height 1080=646
+Height 1080=497
 Height 1350=600
 Height 1440=778
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAA0AAAAH9AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=892
+Width 1920=960
 Width 2400=800
 Width 2560=1034
 Window-Maximized 1309x2327=true
