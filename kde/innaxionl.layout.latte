@@ -281,7 +281,7 @@ immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][14][Applets][56][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][14][Applets][57]
 immutability=1
@@ -349,7 +349,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][15][Applets][62][Configuration]
-PreloadWeight=22
+PreloadWeight=37
 
 [Containments][15][Applets][62][Configuration][ConfigDialog]
 DialogHeight=731
@@ -367,14 +367,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][15][Applets][64][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][15][Applets][65]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][15][Applets][65][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][15][Applets][66]
 immutability=1
@@ -413,7 +413,7 @@ immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
 [Containments][15][Applets][92][Configuration]
-PreloadWeight=10
+PreloadWeight=15
 
 [Containments][15][Applets][94]
 immutability=1
@@ -457,7 +457,7 @@ immutability=1
 plugin=org.kde.windowbuttons
 
 [Containments][16][Applets][69][Configuration]
-PreloadWeight=30
+PreloadWeight=35
 
 [Containments][16][Applets][69][Configuration][ConfigDialog]
 DialogHeight=540
@@ -475,26 +475,8 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][16][Applets][70][Configuration]
-PreloadWeight=30
+PreloadWeight=40
 SystrayContainmentId=14
-
-[Containments][16][Applets][71]
-immutability=1
-plugin=org.kde.plasma.appmenu
-
-[Containments][16][Applets][71][Configuration]
-PreloadWeight=0
-
-[Containments][16][Applets][71][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][16][Applets][72]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][16][Applets][72][Configuration]
-PreloadWeight=5
 
 [Containments][16][Applets][72][Configuration][Appearance]
 displayTimezoneAsCode=false
@@ -503,10 +485,6 @@ showDate=true
 showSeconds=true
 showWeekNumbers=true
 use24hFormat=2
-
-[Containments][16][Applets][72][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][16][Applets][73]
 immutability=1
@@ -536,29 +514,36 @@ DialogWidth=800
 [Containments][16][Applets][84][Configuration][General]
 sources=mem%2Fphysical%2Fapplication
 
-[Containments][16][Applets][87]
-immutability=1
-plugin=org.kde.weatherWidget
-
-[Containments][16][Applets][87][Configuration]
-PreloadWeight=57
-
 [Containments][16][Applets][87][Configuration][Appearance]
 renderMeteogram=true
 
-[Containments][16][Applets][87][Configuration][ConfigDialog]
-DialogHeight=577
-DialogWidth=800
-
 [Containments][16][Applets][87][Configuration][General]
-lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556544725819,"cache_416e05b1b8c6810f77beff1c929c401f":1557059388380}
+lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556544725819,"cache_416e05b1b8c6810f77beff1c929c401f":1557119946135}
 places=[{"providerId":"yrno","placeIdentifier":"China/Guangdong/Guangzhou","placeAlias":"Guangzhou"}]
 
 [Containments][16][Applets][87][Configuration][Units]
 timezoneType=utc
 
+[Containments][16][Applets][94]
+immutability=1
+plugin=org.kde.weatherWidget
+
+[Containments][16][Applets][94][Configuration]
+PreloadWeight=55
+
+[Containments][16][Applets][94][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
+[Containments][16][Applets][94][Configuration][General]
+lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1557120149956,"cache_416e05b1b8c6810f77beff1c929c401f":1557123834278}
+places=[{"providerId":"yrno","placeIdentifier":"China/Guangdong/Guangzhou","placeAlias":"Guangzhou"}]
+
+[Containments][16][Applets][94][Configuration][Units]
+timezoneType=utc
+
 [Containments][16][ConfigDialog]
-DialogHeight=970
+DialogHeight=1810
 DialogWidth=584
 
 [Containments][16][Configuration]
@@ -567,7 +552,7 @@ PreloadWeight=0
 [Containments][16][General]
 activeIndicator=None
 advanced=true
-appletOrder=71;72;87;84;73;70;69
+appletOrder=84;94;73;70;69
 autoDecreaseIconSize=false
 iconMargin=25
 iconSize=20
@@ -578,7 +563,7 @@ panelTransparency=20
 plasmaBackgroundForPopups=true
 shadows=None
 splitterPosition=1
-splitterPosition2=4
+splitterPosition2=3
 themeColors=SmartThemeColors
 zoomLevel=0
 
