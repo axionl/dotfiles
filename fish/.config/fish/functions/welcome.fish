@@ -1,4 +1,4 @@
 
 function welcome
-	lolcat ~/.config/fish/functions/tmux_welcome.txt
+	cat ~/.config/fish/functions/tmux_welcome.txt
 end
