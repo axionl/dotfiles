@@ -1,7 +1,7 @@
 ## fcitx5
 GTK_IM_MODULE DEFAULT=fcitx5
 QT_IM_MODULE  DEFAULT=fcitx5
-XMODIFIERS    DEFAULT=@im=fcitx5
+#XMODIFIERS    DEFAULT={@im=fcitx5}
 
 ## make pkg cache
 CCACHE_DIR DEFAULT=/tmp/ccache
