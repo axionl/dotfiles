@@ -37,7 +37,7 @@
 		"list.activeSelectionForeground": "#959da6",
 		"list.focusBackground": "#959da61a",
 		"list.focusForeground": "#959da6",
-		"list.highlightForeground": "#2eb48e",
+		"list.highlightForeground": "#8d3046",
 		"list.hoverBackground": "#959da61a",
 		"list.hoverForeground": "#959da6",
 		"list.inactiveSelectionBackground": "#959da61a",
@@ -204,7 +204,7 @@
 				"constant.other.symbol"
 			],
 			"settings": {
-				"foreground": "#86b300"
+				"foreground": "#5b7a00"
 			}
 		},
 		{
@@ -215,7 +215,7 @@
 				"constant.other"
 			],
 			"settings": {
-				"foreground": "#4cbf99"
+				"foreground": "#3b9678"
 			}
 		},
 		{
@@ -224,7 +224,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#2eb48e"
+				"foreground": "#e57d32"
 			}
 		},
 		{
@@ -233,7 +233,7 @@
 				"constant.language"
 			],
 			"settings": {
-				"foreground": "#2eb48e"
+				"foreground": "#6381e5"
 			}
 		},
 		{
@@ -242,7 +242,7 @@
 				"variable"
 			],
 			"settings": {
-				"foreground": "#6c7680"
+				"foreground": "#80459e"
 			}
 		},
 		{
@@ -251,7 +251,7 @@
 				"variable.member"
 			],
 			"settings": {
-				"foreground": "#f07171"
+				"foreground": "#e54e4e"
 			}
 		},
 		{
@@ -261,7 +261,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#55b4d4"
+				"foreground": "#3b7f95"
 			}
 		},
 		{
@@ -279,7 +279,7 @@
 				"keyword"
 			],
 			"settings": {
-				"foreground": "#ffa041"
+				"foreground": "#df7b00"
 			}
 		},
 		{
@@ -288,7 +288,7 @@
 				"keyword.operator"
 			],
 			"settings": {
-				"foreground": "#85b577"
+				"foreground": "#cb4141"
 			}
 		},
 		{
@@ -363,7 +363,7 @@
 				"entity.name.function"
 			],
 			"settings": {
-				"foreground": "#6ca6f2"
+				"foreground": "#6196da"
 			}
 		},
 		{
@@ -424,7 +424,7 @@
 				"meta.tag.sgml"
 			],
 			"settings": {
-				"foreground": "#55b4d4"
+				"foreground": "#499db8"
 			}
 		},
 		{
@@ -435,7 +435,7 @@
 				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#55b4d480"
+				"foreground": "#499db880"
 			}
 		},
 		{
@@ -444,7 +444,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#6ca6f2"
+				"foreground": "#6196da"
 			}
 		},
 		{
@@ -729,7 +729,7 @@
 				"text.html.markdown markup.inline.raw"
 			],
 			"settings": {
-				"foreground": "#85b577"
+				"foreground": "#0ca15c"
 			}
 		},
 		{
