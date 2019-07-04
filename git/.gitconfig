@@ -1,7 +1,7 @@
 [user]
     name = axionl
     email = i@axionl.me
-    signingkey = 86F797B20DE062D8540D6D243CD72EBFE6DE17D8
+    signingkey = 1FDBDCE2D26BD8F100EE2E73B1B9AAD8BE7E7326
 [commit]
     gpgsign = true
 [merge]
