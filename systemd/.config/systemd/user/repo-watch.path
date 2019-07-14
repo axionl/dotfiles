@@ -1,0 +1,5 @@
+[Path]
+PathChanged=/home/axionl/Programs/archlinux/local/public
+
+[Install]
+WantedBy=default.target

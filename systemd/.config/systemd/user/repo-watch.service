@@ -1,0 +1,9 @@
+[Unit]
+User=axionl
+Description=Watching path changed for repo
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/axionl/Programs/archlinux/local/public
+ExecStart=/home/axionl/.local/bin/index-generator --human .
