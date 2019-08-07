@@ -1,0 +1,11 @@
+[Unit]
+Description=Aria2 Service
+After=network.target
+
+[Service]
+Type=forking
+WorkingDirectory=/home/axionl/.config/aria2
+ExecStart=/usr/bin/aria2c aria2.conf
+
+[Install]
+WantedBy=default.target
