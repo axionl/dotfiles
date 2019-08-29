@@ -1,0 +1,31 @@
+[Appearance]
+Blur=true
+Skin=breeze-transparent
+SkinInstalledWithKns=true
+TerminalHighlightOnManualActivation=true
+Translucency=true
+
+[AutoOpen]
+PollMouse=true
+
+[Desktop Entry]
+DefaultProfile=Profile.profile
+
+[Dialogs]
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+listViewIconSize=15
+
+[Window]
+DynamicTabTitles=true
+KeepOpen=false
+ShowTabBar=false
+Width=60

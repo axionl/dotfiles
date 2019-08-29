@@ -1,2 +1,2 @@
 #!/bin/sh
-ssh-add $HOME/.ssh/git/git $HOME/.ssh/git/archcn $HOME/.ssh/git/gitlab $HOME/.ssh/git/aosc < /dev/null
+ssh-add $HOME/.ssh/git/aosc $HOME/.ssh/git/archcn $HOME/.ssh/git/aur $HOME/.ssh/git/bitbucket $HOME/.ssh/git/github $HOME/.ssh/git/gitlab < /dev/null

@@ -6,12 +6,6 @@ QT_IM_MODULE  DEFAULT=fcitx5
 ## make pkg cache
 CCACHE_DIR DEFAULT=/tmp/ccache
 
-## systemd-git
-# DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1001/bus
-
-## Proxy
-# HTTP_PROXY DEFAULT=http://127.0.0.1:9998
-
 ## Wine
 # WINEARCH DEFAULT=win32
 
@@ -32,3 +26,17 @@ GTK_CSD DEFAULT=0
 
 ## qt wayland
 # QT_QPA_PLATFORM DEFAULT=wayland-egl
+
+## ssh-agent
+# SSH_ASKPASS DEFAULT=/usr/bin/ksshaskpass
+SSH_AUTH_SOCK DEFAULT=/run/user/1000/ssh-agent.socket
+
+## dart packages
+PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
+
+## rust static
+RUSTUP_DIST_SERVER DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static
+RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
+
+## go mod proxy
+GOPROXY DEFAULT=https://athens.azurefd.net
