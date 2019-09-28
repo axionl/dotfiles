@@ -2,8 +2,6 @@
 Blur=true
 Skin=breeze-transparent
 SkinInstalledWithKns=true
-TerminalHighlightOnManualActivation=true
-Translucency=true
 
 [AutoOpen]
 PollMouse=true
@@ -24,8 +22,11 @@ Favorites=
 [KFileDialog Settings]
 listViewIconSize=15
 
+[Notification Messages]
+ShowPasteUnprintableWarning=true
+
 [Window]
-DynamicTabTitles=true
+Height=60
 KeepOpen=false
 ShowTabBar=false
 Width=60
