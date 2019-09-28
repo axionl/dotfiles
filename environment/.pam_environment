@@ -13,10 +13,10 @@ CCACHE_DIR DEFAULT=/tmp/ccache
 GTK_CSD DEFAULT=0
 
 ## use plasma dialog as default
-# GTK_USE_PORTAL=1
+GTK_USE_PORTAL=1
 
 ## libreoffice render
-#SAL_USE_VCLPLUGIN DEFAULT=gtk3_kde5
+SAL_USE_VCLPLUGIN DEFAULT=kde5
 
 ## gtk wayland
 # GDK_BACKEND DEFAULT=wayland
@@ -35,8 +35,8 @@ SSH_AUTH_SOCK DEFAULT=/run/user/1000/ssh-agent.socket
 PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
 
 ## rust static
-RUSTUP_DIST_SERVER DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static
+RUSTUP_DIST_SERVER DEFAULT=https://mirrors.tuna.tsinghua.edu.cn/rustup
 RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
 
-## go mod proxy
+## go mod
 GOPROXY DEFAULT=https://athens.azurefd.net
