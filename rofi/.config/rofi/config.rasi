@@ -1,9 +1,9 @@
 configuration {
 	modi: "window,drun,ssh,run";
-	width: 30;
-	lines: 7;
+	width: 45;
+	lines: 10;
 /*	columns: 1;*/
-	font: "Noto Sans CJK SC 12";
+	font: "Noto Sans CJK SC 10";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 5;*/
