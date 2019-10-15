@@ -22,12 +22,12 @@
 
 /* Hide splitter, when using Tree Style Tab. */
 
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+/* #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
 	display: none !important;
-}
+} */
 
 /* Auto-show/hide sidebar by mouseover (hover) */
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+/* #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
   overflow: hidden;
   min-width: 40px;
   max-width: 40px;
@@ -37,8 +37,8 @@
 }
 
 /*Expand to 180px on hover*/
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+/* #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
   min-width: 80px !important;
   max-width: 180px !important;
-}
+} */
