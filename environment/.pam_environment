@@ -36,7 +36,8 @@ PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
 
 ## rust static
 RUSTUP_DIST_SERVER DEFAULT=https://mirrors.tuna.tsinghua.edu.cn/rustup
-RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
+#RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
+RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 ## go mod
 GOPROXY DEFAULT=https://athens.azurefd.net
