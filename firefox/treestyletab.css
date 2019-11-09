@@ -1,81 +1,25 @@
-/* Highlight active tab */
-
-.tab.active {
-  height: 39px !important;
-  background-color: #b0c7cf;
+/* Hide native tabs */
+#TabsToolbar {
+  visibility: collapse;
 }
 
-.tab.active .label {
-  font-weight: bold;
-  font-size: 14px;
+/* Hide the "Tree Style Tab" header at the top of the sidebar */
+#sidebar-header {
+  visibility: collapse;
 }
 
-.tab.active .twisty,
-.tab.active .label,
-.tab.active .counter {
-  color: #ffffff;
+/*Collapse in default state and add transition*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  overflow: hidden;
+  min-width: 40px;
+  max-width: 40px;
+  transition: all 0.2s ease;
+  z-index: 999;
 }
 
-/* Hovered tab */
-
-.tab:hover {
-  background: #d0ebf4 !important;
-  opacity: 1;
-}
-
-/* Tab numbering and counting */
-
-#tabbar {
-  counter-reset: vtabs atabs tabs;
-}
-
-.tab:not(.collapsed):not(.discarded) {
-  counter-increment: vtabs atabs tabs;
-}
-
-.tab:not(.collapsed) {
-  counter-increment: vtabs tabs;
-}
-
-.tab:not(.discarded) {
-  counter-increment: atabs tabs;
-}
-
-.tab {
-  counter-increment: tabs;
-}
-
-/* Numbering of tabs */
-
-.tab .extra-items-container {
-  z-index: unset !important;
-}
-
-/* Tab counts in new tab button */
-
-.tab .extra-items-container::after {
-  background: Highlight;
-  color: HighlightText;
-  content: counter(vtabs);
-  font-size: x-small;
-  left: 0.2em;
-  padding: 0.2em;
-  pointer-events: none;
-  position: absolute;
-  top: 0.2em;
-
-  z-index: 1000;
-}
-
-.newtab-button::after {
-  content: var(--tab-count-text);
-  pointer-events: none;
-  position: absolute;
-  right: 2.2em;
-  background: transparent !important;
-  mask: none !important;
-}
-
-.newtab-button {
-  --tab-count-text: counter(tabs) " tabs";
+/*Expand to 260px on hover*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+  min-width: 260px !important;
+  max-width: 260px !important;
 }
