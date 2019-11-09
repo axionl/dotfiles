@@ -75,3 +75,11 @@ merged = 0
 [[custom_plugins]]
 name = "sainnhe/vim-color-atlantis"
 merged = 0
+
+[[custom_plugins]]
+name = "zxqfl/tabnine-vim"
+merged = 0
+
+[[custom_plugins]]
+name = "google/vim-jsonnet"
+merged = 0
