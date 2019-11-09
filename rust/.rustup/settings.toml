@@ -2,3 +2,4 @@ default_toolchain = "stable-x86_64-unknown-linux-gnu"
 version = "12"
 
 [overrides]
+"/tmp/makepkg/nushell-git/src/nushell-git" = "nightly-x86_64-unknown-linux-gnu"

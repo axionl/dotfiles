@@ -2,6 +2,7 @@
 Blur=true
 Skin=breeze-transparent
 SkinInstalledWithKns=true
+Translucency=true
 
 [AutoOpen]
 PollMouse=true
