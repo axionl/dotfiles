@@ -1,3 +1,3 @@
 [submodule "firefox/.mozilla/firefox/themes/MaterialFox"]
 	path = firefox/.mozilla/firefox/themes/MaterialFox
-	url = https://github.com/muckSponge/MaterialFox.git
+	url = git@github.com:axionl/myMaterialFox.git
