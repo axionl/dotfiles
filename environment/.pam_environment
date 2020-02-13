@@ -6,6 +6,10 @@ QT_IM_MODULE  DEFAULT=fcitx5
 ## make pkg cache
 CCACHE_DIR DEFAULT=/tmp/ccache
 
+## cargo cache
+RUSTC_WRAPPER DEFAULT=sccache
+SCCACHE_CACHE_SIZE DEFAULT="1G"
+
 ## Wine
 # WINEARCH DEFAULT=win32
 
@@ -24,8 +28,9 @@ SAL_USE_VCLPLUGIN DEFAULT=kde5
 ## xdg
 # XDG_SESSION_TYPE DEFAULT=wayland
 
-## qt wayland
+## qt
 # QT_QPA_PLATFORM DEFAULT=wayland-egl
+QT_ENABLE_HIGHDPI_SCALING=1
 
 ## ssh-agent
 # SSH_ASKPASS DEFAULT=/usr/bin/ksshaskpass
@@ -41,3 +46,9 @@ RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 ## go mod
 GOPROXY DEFAULT=https://athens.azurefd.net
+
+## amd gpu
+RADV_PERFTEST DEFAULT=aco
+
+## Default Editor
+EDITOR DEFAULT=vim
