@@ -28,11 +28,13 @@
 #     set -g theme_display_vagrant yes
 #     set -g theme_display_docker_machine no
 #     set -g theme_display_k8s_context yes
+#     set -g theme_display_k8s_namespace no
 #     set -g theme_display_hg yes
 #     set -g theme_display_virtualenv no
 #     set -g theme_display_ruby no
 #     set -g theme_display_user ssh
 #     set -g theme_display_hostname ssh
+#     set -g theme_display_sudo_user yes
 #     set -g theme_display_vi no
 #     set -g theme_display_nvm yes
 #     set -g theme_avoid_ambiguous_glyphs yes
@@ -416,18 +418,29 @@ function __bobthefish_prompt_status -S -a last_status -d 'Display flags for a no
     # will be wrong. But I can't think of a single reason that would happen, and
     # it is literally 99.5% faster to check it this way, so that's a tradeoff I'm
     # willing to make.
-    [ -w / ]
+    [ -w / -o -w /private/ ]
     and [ (id -u) -eq 0 ]
     and set superuser 1
 
     # Jobs display
-    if [ "$theme_display_jobs_verbose" = 'yes' ]
-        set bg_jobs (jobs -p | wc -l)
+    if set -q AUTOJUMP_SOURCED
+        # Autojump special case: check if there are jobs besides the `autojump`
+        # job, since that one is (briefly) backgrounded every time we `cd`
+        set bg_jobs (jobs -c | string match -v --regex '(Command|autojump)' | wc -l)
         [ "$bg_jobs" -eq 0 ]
         and set bg_jobs # clear it out so it doesn't show when `0`
     else
-        jobs -p >/dev/null
-        and set bg_jobs 1
+        if [ "$theme_display_jobs_verbose" = 'yes' ]
+            set bg_jobs (jobs -p | wc -l)
+            [ "$bg_jobs" -eq 0 ]
+            and set bg_jobs # clear it out so it doesn't show when `0`
+        else
+            # `jobs -p` is faster if we redirect to /dev/null, because it exits
+            # after the first match. We'll use that unless the user wants to
+            # display the actual job count
+            jobs -p >/dev/null
+            and set bg_jobs 1
+        end
     end
 
     if [ "$nonzero" -o "$superuser" -o "$bg_jobs" ]
@@ -627,7 +640,8 @@ function __bobthefish_prompt_k8s_context -S -d 'Show current Kubernetes context'
     set -l context (__bobthefish_k8s_context)
     or return
 
-    set -l namespace (__bobthefish_k8s_namespace)
+    [ "$theme_display_k8s_namespace" = 'yes' ]
+    and set -l namespace (__bobthefish_k8s_namespace)
 
     set -l segment $k8s_glyph " " $context
     [ -n "$namespace" ]
@@ -657,6 +671,9 @@ function __bobthefish_prompt_user -S -d 'Display current user and hostname'
     [ "$theme_display_user" = 'yes' -o \( "$theme_display_user" != 'no' -a -n "$SSH_CLIENT" \) -o \( -n "$default_user" -a "$USER" != "$default_user" \) ]
     and set -l display_user
 
+    [ "$theme_display_sudo_user" = 'yes' -a -n "$SUDO_USER" ]
+    and set -l display_sudo_user
+
     [ "$theme_display_hostname" = 'yes' -o \( "$theme_display_hostname" != 'no' -a -n "$SSH_CLIENT" \) ]
     and set -l display_hostname
 
@@ -665,8 +682,18 @@ function __bobthefish_prompt_user -S -d 'Display current user and hostname'
         echo -ns (whoami)
     end
 
+    if set -q display_sudo_user
+        if set -q display_user
+            echo -ns ' '
+        else
+            __bobthefish_start_segment $color_username
+        end
+        echo -ns "($SUDO_USER)"
+    end
+
     if set -q display_hostname
         if set -q display_user
+            or set -q display_sudo_user
             # reset colors without starting a new segment...
             # (so we can have a bold username and non-bold hostname)
             set_color normal
@@ -679,6 +706,7 @@ function __bobthefish_prompt_user -S -d 'Display current user and hostname'
     end
 
     set -q display_user
+    or set -q display_sudo_user
     or set -q display_hostname
     and echo -ns ' '
 end
@@ -1038,13 +1066,13 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     __bobthefish_prompt_status $last_status
     __bobthefish_prompt_vi
 
+    # User / hostname info
+    __bobthefish_prompt_user
+
     # Containers and VMs
     __bobthefish_prompt_vagrant
     __bobthefish_prompt_docker
     __bobthefish_prompt_k8s_context
-
-    # User / hostname info
-    __bobthefish_prompt_user
 
     # Virtual environments
     __bobthefish_prompt_desk
