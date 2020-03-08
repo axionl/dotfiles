@@ -52,3 +52,6 @@ RADV_PERFTEST DEFAULT=aco
 
 ## Default Editor
 EDITOR DEFAULT=vim
+
+## Telegram Tray Icon
+TDESKTOP_DISABLE_TRAY_COUNTER=1
