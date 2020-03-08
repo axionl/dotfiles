@@ -42,38 +42,25 @@ window:
   #     - buttonless: Title bar, transparent background, but no title bar buttons
   decorations: full
 
-  # When true, alacritty starts maximized.
-  start_maximized: false
-
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  startup_mode: Windowed
+ 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 0
+  history: 3000
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  multiplier: 0
-
-  # Faux Scrolling
-  #
-  # The `faux_multiplier` setting controls the number of lines the terminal
-  # should scroll when the alternate screen buffer is active. This is used
-  # to allow mouse scrolling for applications like `man`.
-  #
-  # Specifying `0` will disable faux scrolling.
-  faux_multiplier: 3
-
-  # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
-
-# Spaces per Tab (changes require restart)
-#
-# This setting defines the width of a tab in cells.
-#
-# Some applications, like Emacs, rely on knowing about the width of a tab.
-# To prevent unexpected behavior in these applications, it's also required to
-# change the `it` value in terminfo when altering this setting.
-tabspaces: 4
+  #multiplier: 3
 
 # Font configuration (changes require restart)
 font:
@@ -85,7 +72,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Fira Code
+    family: IosevkaCC Slab
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -96,10 +83,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code
+    family: IosevkaCC Slab
 
     # The `style` can be specified to pick a specific face.
-    style: Medium
+    style: Bold
 
   # Italic font face
   italic:
@@ -107,13 +94,13 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code
+    family: IosevkaCC Slab
 
     # The `style` can be specified to pick a specific face.
     style: Italic
 
 # Point size
-  size: 10
+  size: 10.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -144,12 +131,6 @@ font:
   # effect.
   use_thin_strokes: true
 
-# Display the time it takes to redraw each frame.
-render_timer: false
-
-# Keep the log file after quitting Alacritty.
-persistent_logging: false
-
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
@@ -158,7 +139,7 @@ colors:
   # Default colors
   primary:
     background: "0x182222"
-    foreground: "0x18f018"
+    foreground: "0x57d557"
 
     # Bright and dim foreground colors
     #
@@ -564,3 +545,24 @@ key_bindings:
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                      }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                      }
   - { key: NumpadEnter,             chars: "\n"                              }
+
+#debug:
+  # Display the time it takes to redraw each frame.
+  #render_timer: false
+
+  # Keep the log file after quitting Alacritty.
+  #persistent_logging: false
+  
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - None
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  #log_level: Warn
+
+  # Print all received window events.
+  #print_events: false
