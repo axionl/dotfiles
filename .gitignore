@@ -2,3 +2,4 @@
 ssh/.ssh/*
 *.log
 *.latte
+firefox/.mozilla/firefox/*
