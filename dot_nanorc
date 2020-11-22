@@ -1,0 +1,14 @@
+# Highlighting
+include /usr/share/nano-syntax-highlighting/*.nanorc
+
+# Setting
+set mouse
+set autoindent
+set tabsize 4
+set tabstospaces
+set smooth
+set boldtext
+set softwrap
+set suspend
+set regexp
+set linenumbers

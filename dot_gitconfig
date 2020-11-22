@@ -1,0 +1,23 @@
+[user]
+	name = axionl
+	email = i@axionl.me
+	signingkey = 1FDBDCE2D26BD8F100EE2E73B1B9AAD8BE7E7326
+[http]
+	proxy = http://127.0.0.1:8888
+[core]
+	editor = nano
+	pager = delta
+[commit]
+	gpgsign = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	features = side-by-side line-numbers decorations
+	whitespace-error-stype = 22 reverse
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	file-style = bold yellow ul
+	fire-decoration-style = none
+[pull]
+	rebase = false
+	gpgsign = true

@@ -1,0 +1,21 @@
+#TabsToolbar {
+    visibility: collapse;
+}
+
+#sidebar-header {
+    visibility: collapse;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    overflow: hidden;
+    min-width: 70px;
+    max-width: 90px;
+    transition: all 0.2s ease;
+    z-index: auto;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+    min-width: 300px !important;
+    max-width: 350px !important;
+}

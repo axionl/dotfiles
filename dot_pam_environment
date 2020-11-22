@@ -1,0 +1,41 @@
+# fcitx5
+GTK_IM_MODULE=fcitx5
+QT_IM_MODULE=fcitx5
+XMODIFIERS={@im=fcitx5}
+
+# ccache
+CCACHE_DIR DEFAULT=/tmp/ccache
+
+# plasma
+GTK_USE_PORTAL DEFAULT=1
+SAL_USE_VCLPLUGIN DEFAULT=kde5
+
+# wayland
+# QT_QPA_PLATFORM DEFAULT=wayland
+
+# telegram
+TDESKTOP_USE_PORTAL DEFAULT=1
+TDESKTOP_FORCE_PANEL_ICON DEFAULT=1
+TDESKTOP_DISABLE_TRAY_COUNTER DEFAULT=1
+
+# ssh
+SSH_AUTH_SOCK DEFAULT=/run/user/1000/ssh-agent.socket
+
+# editor
+EDITOR DEFAULT=nano
+
+# golang
+GOPROYX DEFAULT=https://athens.azurefd.net
+GOPATH DEFAULT=/home/axionl/.local/go
+
+# rust
+RUSTUP_DIST_SERVER DEFAULT=https://mirrors.tuna.tsinghua.edu.cn/rustup
+RUSTC_WRAPPER DEFAULT=sccache
+SCCACHE_CACHE_SIZE="1G"
+RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.ustc.edu.cn/rust-static/rustup
+
+# dart
+PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
+
+# amd
+RADV_PERFTEST DEFAULT=aco
