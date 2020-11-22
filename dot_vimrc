@@ -1,0 +1,17 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'ryanoasis/vim-devicons'
+Plug 'Yggdroot/indentLine'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+set number
+set mouse=a
+set cursorline
+set cursorcolumn
+syntax on
+colorscheme onedark

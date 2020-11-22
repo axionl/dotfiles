@@ -1,0 +1,14 @@
+# /usr/lib/systemd/system/filebrowser.service
+[Unit]
+Description=Filebrowser Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/axionl/.local/share/filebrowser/
+ExecStart=/usr/bin/filebrowser --config ~/.config/filebrowser.json
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

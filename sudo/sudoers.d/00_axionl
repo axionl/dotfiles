@@ -1,2 +1,0 @@
-Defaults:axionl timestamp_timeout=20
-axionl axionl=NOPASSWD: /usr/bin/pacman -Syu,/usr/bin/pacman -Fy,/usr/bin/trash-empty,/usr/bin/ss,/usr/bin/pkgfile,/usr/bin/nft,/usr/bin/extra-x86_64-build
