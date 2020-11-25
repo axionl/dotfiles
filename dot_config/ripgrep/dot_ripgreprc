@@ -1,8 +1,9 @@
 # Glob
---glob!=git/*
+--glob=!git/*
 
 # Styles
 --colors=line:style:bold
 
 # Others
 --smart-case
+-C1
