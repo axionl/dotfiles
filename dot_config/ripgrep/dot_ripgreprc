@@ -1,0 +1,8 @@
+# Glob
+--glob!=git/*
+
+# Styles
+--colors=line:style:bold
+
+# Others
+--smart-case
