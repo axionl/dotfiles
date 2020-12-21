@@ -1,5 +1,5 @@
 # PATH
-export PATH=${PATH}:${HOME}/.local/bin:${HOME}/.local/go/bin:${HOME}/.cargo/bin
+export PATH=${PATH}:${HOME}/.local/bin:${HOME}/.local/go/bin:${HOME}/.local/cargo/bin
 
 # firefox
 export MOZ_WEBRENDER=1
