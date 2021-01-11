@@ -2,10 +2,13 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Yggdroot/indentLine'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'hzchirs/vim-material'
+Plug 'vim-airline/vim-airline'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -13,5 +16,10 @@ set number
 set mouse=a
 set cursorline
 set cursorcolumn
+set encoding=UTF-8
 syntax on
-colorscheme onedark
+set termguicolors     " enable true colors support
+set background=light
+colorscheme vim-material
+let g:airline_theme='material'
+let g:airline#extensions#tabline#enabled = 1

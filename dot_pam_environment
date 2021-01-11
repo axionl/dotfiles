@@ -42,6 +42,8 @@ PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
 
 # amd
 RADV_PERFTEST DEFAULT=aco
+LIBVA_DRIVER_NAME DEFAULT=radeonsi
+VDPAU_DRIVER DEFAULT=radeonsi
 
 # ripgrep
 RIPGREP_CONFIG_PATH DEFAULT=/home/axionl/.config/ripgrep
