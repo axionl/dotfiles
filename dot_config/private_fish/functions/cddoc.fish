@@ -1,7 +1,7 @@
 # Defined in - @ line 4
-set DIR_PATH "$HOME/Programs/"
+set DIR_PATH "$HOME/Documents/"
 
-function cdsrc --description 'alias cd $DIR_PATH'
+function cddoc --description 'alias cd $DIR_PATH'
     if test -d "$DIR_PATH$argv"
         cd "$DIR_PATH$argv"
     else
@@ -9,4 +9,4 @@ function cdsrc --description 'alias cd $DIR_PATH'
     end
 end
 
-complete -x -c cdsrc -a "(ls $DIR_PATH | cut -f1)"
+complete -x -c cddoc -a "(ls $DIR_PATH | cut -f1)"
