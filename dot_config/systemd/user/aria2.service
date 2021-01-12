@@ -1,0 +1,13 @@
+[Unit]
+Description=Aria2 Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/axionl/.config/aria2/
+ExecStart=/usr/bin/aria2c
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
