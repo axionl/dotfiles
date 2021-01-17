@@ -27,15 +27,15 @@ EDITOR DEFAULT=nano
 
 # golang
 GOPROYX DEFAULT=https://athens.azurefd.net
-GOPATH DEFAULT=/home/axionl/.local/go
+GOPATH DEFAULT=/home/axionl/.local/lib/go/
 
 # rust
 RUSTC_WRAPPER DEFAULT=sccache
 SCCACHE_CACHE_SIZE DEFAULT="1G"
-RUSTUP_HOME DEFAULT=/home/axionl/.local/rustup
+RUSTUP_HOME DEFAULT=/home/axionl/.local/lib/rustup
 RUSTUP_UPDATE_ROOT DEFAULT=https://mirrors.ustc.edu.cn/rust-static/rustup
 RUSTUP_DIST_SERVER DEFAULT=https://mirrors.tuna.tsinghua.edu.cn/rustup
-CARGO_HOME DEFAULT=/home/axionl/.local/cargo
+CARGO_HOME DEFAULT=/home/axionl/.local/lib/cargo
 
 # dart
 PUB_HOSTED_URL DEFAULT=https://dart-pub.mirrors.sjtug.sjtu.edu.cn
