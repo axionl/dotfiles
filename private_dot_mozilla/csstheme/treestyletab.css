@@ -6,6 +6,10 @@
     visibility: collapse;
 }
 
+#sidebar-splitter {
+    visibility: collapse;
+}
+
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
     overflow: hidden;
     min-width: 70px;
