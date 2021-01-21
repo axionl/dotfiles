@@ -272,3 +272,6 @@ bind - split-window -v
 bind | split-window -h
 
 run-shell ~/.tmux/.tmux-battery/battery.tmux
+
+# set ture color
+set -g default-terminal 'screen-256color'
