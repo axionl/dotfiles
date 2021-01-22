@@ -1,5 +1,5 @@
 " Install Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
     Plug 'joshdick/onedark.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'ryanoasis/vim-devicons'
@@ -22,15 +22,10 @@ set cursorline
 set cursorcolumn
 set encoding=UTF-8
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-
 " Set Color Theme
 syntax on
 set background=dark
 colorscheme onedark
 let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 1
+set termguicolors
