@@ -1,25 +1,36 @@
-" Plugins will be downloaded under the specified directory.
+" Install Plugins
 call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
-" Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'ryanoasis/vim-devicons'
-Plug 'Yggdroot/indentLine'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'hzchirs/vim-material'
-Plug 'vim-airline/vim-airline'
-
-" List ends here. Plugins become visible to Vim after this call.
+    Plug 'joshdick/onedark.vim'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'Yggdroot/indentLine'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'preservim/nerdtree'
 call plug#end()
+
+" Set Plugins
+autocmd VimEnter * NERDTree | wincmd p
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+" Set Display
 set number
 set mouse=a
 set cursorline
 set cursorcolumn
 set encoding=UTF-8
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" Set Color Theme
 syntax on
-set termguicolors     " enable true colors support
-set background=light
-colorscheme vim-material
-let g:airline_theme='material'
+set background=dark
+colorscheme onedark
+let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 1
