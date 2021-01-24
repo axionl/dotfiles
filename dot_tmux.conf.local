@@ -273,6 +273,7 @@ bind | split-window -h
 
 run-shell ~/.tmux/.tmux-battery/battery.tmux
 
-# set ture color
-set -g default-terminal 'screen-256color'
+## set ture color
+set -g default-terminal 'xterm-256color'
 set -ga terminal-overrides ",*256col*:Tc"
+set-option -g default-shell /usr/bin/fish

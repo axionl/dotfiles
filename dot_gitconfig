@@ -13,12 +13,12 @@
 	diffFilter = delta --color-only
 [delta]
 	features = side-by-side line-numbers decorations
-	syntax-theme = GitHub
+	syntax-theme = OneHalfDark
 	whitespace-error-stype = 22 reverse
 [delta "decorations"]
 	commit-decoration-style = bold yellow box ul
 	file-style = bold yellow ul
-	fire-decoration-style = none
+	fire-decoration-style = box
 [pull]
 	rebase = false
 	gpgsign = true
