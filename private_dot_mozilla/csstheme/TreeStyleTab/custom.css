@@ -4,6 +4,10 @@
     --padding-size: 7px;
 }
 
+#tabbar-container {
+    background-color: #ffffff99 !important;
+}
+
 tab-item {
     padding: var(--padding-size);
     margin-top: var(--margin-top-distance);
