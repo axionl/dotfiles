@@ -1,34 +1,56 @@
 :root {
     --tab-border-radius: 5px;
-    --margin-top-distance: 3px;
-    --padding-size: 5px;
-    --active-tab-color-a: #fff;
-    --active-tab-color-b: #03fcc611;
+    --margin-top-distance: 4px;
+    --padding-size: 7px;
 }
 
 tab-item {
-    border-radius: var(--tab-border-radius);
     padding: var(--padding-size);
     margin-top: var(--margin-top-distance);
-    transition: all 0.3s ease-in-out !important;
     border: none !important;
+    border-radius: var(--tab-border-radius);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+tab-item:hover {
+    background-color: var(--theme-colors-popup) !important;
+    box-shadow: -0.3em 0.3em var(--shadow-blur) var(--shadow-color) !important;
+}
+
+tab-item.active {
+    margin-top: var(--margin-top-distance);
+    background: linear-gradient(35deg, #95b5ffff 36%,  #2afadfff 100%) !important;
+    border-radius: var(--tab-border-radius);
+}
+
+tab-item.active span {
+    color: white !important;
+    font-weight: bold;
+}
+
+tab-favicon {
+    margin: 0px 5px !important;
 }
 
 .newtab-button {
     border: none !important;
     border-radius: var(--tab-border-radius);
     padding: var(--padding-size) !important;
-    margin-top: var(--margin-top-distance);
+    margin-top: var(--margin-top-distance) !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.newtab-button:hover {
+    background-color: var(--theme-colors-popup) !important;
 }
 
 .newtab-action-selector-anchor {
     border: none !important;
-    margin-top: var(--margin-top-distance);
-    margin-right: 6px
+    box-shadow: none !important;
 }
 
-tab-item.active {
-    background: linear-gradient(to right, var(--active-tab-color-a), var(--active-tab-color-b)) !important;
-    font-weight: bolder;
+.highlighter {
+    visibility: collapse !important;
 }
-
