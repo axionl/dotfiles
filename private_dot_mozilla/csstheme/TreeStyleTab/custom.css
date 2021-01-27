@@ -5,7 +5,7 @@
 }
 
 #tabbar-container {
-    background-color: #ffffff99 !important;
+    background-color: #f9f9f9 !important;
 }
 
 tab-item {
@@ -18,7 +18,7 @@ tab-item {
 }
 
 tab-item:hover {
-    background-color: var(--theme-colors-popup) !important;
+    background-color: white !important;
     box-shadow: -0.3em 0.3em var(--shadow-blur) var(--shadow-color) !important;
 }
 
@@ -58,3 +58,4 @@ tab-favicon {
 .highlighter {
     visibility: collapse !important;
 }
+
