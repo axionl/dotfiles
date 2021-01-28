@@ -11,6 +11,7 @@ Plug 'preservim/nerdtree'
 Plug 'sainnhe/sonokai'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'rust-lang/rust.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
 " Set Plugins
@@ -19,6 +20,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set timeoutlen=500
 filetype plugin indent on
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 1
+let g:mkdp_browser = '/usr/bin/firefox-developer-edition'
+let g:mkdp_page_title = '「${name}」'
 
 " Set Display
 set number
@@ -77,12 +83,12 @@ let g:leader_key_map['w'] = {
     \ }
 
 let g:leader_key_map['f'] = {
-    \ 'name' : 'File'                      ,
-    \ 'q' : [':q' , 'close-file']                      ,
-    \ 'Q' : [':q!' , 'close-abandon-changes']          ,
-    \ 'w' : [':w' , 'save-file']                       ,
-    \ 'x' : [':x' , 'save-and-close']                  ,
-    \ 'm' : [':e $MYVIMRC' , 'edit-config']            ,
+    \ 'name' : 'File'                                ,
+    \ 'q' : [':q' , 'close-file']                    ,
+    \ 'Q' : [':q!' , 'close-abandon-changes']        ,
+    \ 'w' : [':w' , 'save-file']                     ,
+    \ 'x' : [':x' , 'save-and-close']                ,
+    \ 'm' : [':e $MYVIMRC' , 'edit-config']          ,
     \ }
 
 let g:leader_key_map['e'] = {
@@ -109,7 +115,7 @@ let g:leader_key_map['e'] = {
     \ }
 
 let g:leader_key_map['v'] = {
-    \ 'name' : 'VisualMode'                        ,
+    \ 'name' : 'VisualMode'                         ,
     \ 'v'   : ['' , 'enter-visual-mode']            ,
     \ 'V'   : ['' , 'enter-visual-line-mode']       ,
     \ 'B'   : ['<C-V>' , 'enter-visual-block-mode'] ,
@@ -132,36 +138,36 @@ let g:leader_key_map['v'] = {
     \ }
 
 let g:leader_key_map['n'] = {
-    \ 'name' : 'Navigating' ,
-    \ 'h'  : ['' , 'left'] ,
-    \ 'j'  : ['' , 'up'] ,
-    \ 'k'  : ['' , 'down'] ,
-    \ 'l'  : ['' , 'right'],
-    \ 'U'  : ['<C-U>' , 'half-page-up'] ,
-    \ 'D'  : ['<C-D>' , 'half-page-down'] ,
-    \ 'B'  : ['<C-B>' , 'page-up'] ,
-    \ 'F'  : ['<C-F>' , 'page-down'] ,
-    \ 'b'  : ['' , 'previous-word'] ,
-    \ 'w'  : ['' , 'next-word'] ,
-    \ 'ge' : ['', 'previous-end-of-word'] ,
-    \ '0'  : ['' , 'start-of-line'] ,
-    \ '^'  : ['' , 'start-of-line-after-whitespace'] ,
-    \ '$'  : ['' , 'end-of-line'] ,
-    \ 'fc' : ['' , 'go-forward-to-character'] ,
-    \ 'Fc' : ['' , 'go-backward-to-character'] ,
-    \ 'gg' : ['' , 'first-line'] ,
-    \ 'G'  : ['' , 'last-line'] ,
-    \ ':n' : ['' , 'go-to-line-n'] ,
-    \ 'nG' : ['' , 'go-to-line-n'] ,
-    \ 'zz' : ['' , 'center-this-line'] ,
-    \ 'zt' : ['' , 'top-this-line'] ,
-    \ 'zb' : ['' , 'bot-tom-this-line'] ,
-    \ 'H'  : ['' , 'move-to-top-of-screen'] ,
-    \ 'M'  : ['' , 'move-to-middle-of-screen'] ,
-    \ 'L'  : ['' , 'move-to-bottom-of-screen'] ,
-    \ 'n'  : ['' , 'next-matching-search-pattern'] ,
-    \ 'N'  : ['' , 'previous-match'] ,
-    \ '*'  : ['' , 'next-whole-word-under-cursor'] ,
+    \ 'name' : 'Navigating'                            ,
+    \ 'h'  : ['' , 'left']                             ,
+    \ 'j'  : ['' , 'up']                               ,
+    \ 'k'  : ['' , 'down']                             ,
+    \ 'l'  : ['' , 'right']                            ,
+    \ 'U'  : ['<C-U>' , 'half-page-up']                ,
+    \ 'D'  : ['<C-D>' , 'half-page-down']              ,
+    \ 'B'  : ['<C-B>' , 'page-up']                     ,
+    \ 'F'  : ['<C-F>' , 'page-down']                   ,
+    \ 'b'  : ['' , 'previous-word']                    ,
+    \ 'w'  : ['' , 'next-word']                        ,
+    \ 'ge' : ['', 'previous-end-of-word']              ,
+    \ '0'  : ['' , 'start-of-line']                    ,
+    \ '^'  : ['' , 'start-of-line-after-whitespace']   ,
+    \ '$'  : ['' , 'end-of-line']                      ,
+    \ 'fc' : ['' , 'go-forward-to-character']          ,
+    \ 'Fc' : ['' , 'go-backward-to-character']         ,
+    \ 'gg' : ['' , 'first-line']                       ,
+    \ 'G'  : ['' , 'last-line']                        ,
+    \ ':n' : ['' , 'go-to-line-n']                     ,
+    \ 'nG' : ['' , 'go-to-line-n']                     ,
+    \ 'zz' : ['' , 'center-this-line']                 ,
+    \ 'zt' : ['' , 'top-this-line']                    ,
+    \ 'zb' : ['' , 'bot-tom-this-line']                ,
+    \ 'H'  : ['' , 'move-to-top-of-screen']            ,
+    \ 'M'  : ['' , 'move-to-middle-of-screen']         ,
+    \ 'L'  : ['' , 'move-to-bottom-of-screen']         ,
+    \ 'n'  : ['' , 'next-matching-search-pattern']     ,
+    \ 'N'  : ['' , 'previous-match']                   ,
+    \ '*'  : ['' , 'next-whole-word-under-cursor']     ,
     \ '#'  : ['' , 'previous-whole-word-under-cursor'] ,
     \ }
 
@@ -182,9 +188,26 @@ function! _find_tab()
 endfunction
 
 let g:leader_key_map['t'] = {
-    \ 'name' : 'TabPages' ,
-    \ 'e' : [':call _new_tab()' , 'edit-file-in-a-new-tab'] ,
+    \ 'name' : 'TabPages'                                            ,
+    \ 'e' : [':call _new_tab()' , 'edit-file-in-a-new-tab']          ,
     \ 'f' : [':call _find_tab()' , 'open-file-if-exists-in-new-tab'] ,
+    \ 'q' : [':tabclose' , 'close-current-tab']                      ,
+    \ 'l' : [':tabs' , 'list-all-tabs']                              ,
+    \ 'g' : [':tabfirst' , 'go-to-first-tab']                        ,
+    \ 'G' : [':tablast' , 'go-to-last-tab']                          ,
+    \ 'n' : [':tabn' , 'go-to-next-tab']                             ,
+    \ 'N' : [':tabp' , 'go-to-previous-tab']                         ,
+    \ }
+
+let g:leader_key_map['o'] = {
+    \ 'name' : 'TextObject'             ,
+    \ 'p'    : ['' , 'paragraph']       ,
+    \ 'w'    : ['' , 'word']            ,
+    \ 's'    : ['' , 'sentence']        ,
+    \ '[({<' : ['' , 'a-block']         ,
+    \ 'b'    : ['' , 'a-block-[(']      ,
+    \ 'B'    : ['' , 'a-block-in-[{']   ,
+    \ 't'    : ['' , 'a-xml-tag-block'] ,
     \ }
 
 autocmd! User vim-which-key call which_key#register('<Space>', 'g:leader_key_map')
