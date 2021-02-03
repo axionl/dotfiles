@@ -1,14 +1,13 @@
-
 BasedOnStyle: LLVM
 PointerAlignment: Right
 IndentWidth: 4
 MaxEmptyLinesToKeep: 1
 ObjCSpaceAfterProperty: true
 ObjCBlockIndentWidth: 4
-AllowShortFunctionsOnASingleLine: true
-AllowShortIfStatementsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: Never
 AlignTrailingComments: true
-AlignOperands: true
+AlignOperands: Align
 SpacesInSquareBrackets: true
 AlignConsecutiveDeclarations: true
 AlignConsecutiveAssignments: true
@@ -18,6 +17,5 @@ IndentWrappedFunctionNames: true
 KeepEmptyLinesAtTheStartOfBlocks: true
 BreakConstructorInitializersBeforeComma: true
 AllowAllParametersOfDeclarationOnNextLine: true
-SpaceAfterCStyleCase: true
 TabWidth: 4
 UseTab: Never

@@ -30,6 +30,8 @@ let g:mkdp_page_title = '「${name}」'
 set number
 set hidden
 set mouse=a
+set tabstop=4
+set shiftwidth=4
 set cursorline
 set cursorcolumn
 set encoding=UTF-8
