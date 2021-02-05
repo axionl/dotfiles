@@ -16,15 +16,18 @@ call plug#end()
 
 " Set Plugins
 autocmd VimEnter * NERDTree | wincmd p
+set timeoutlen=500
+set pyx=3
+filetype plugin indent on
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-set timeoutlen=500
-filetype plugin indent on
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 1
 let g:mkdp_browser = '/usr/bin/firefox-developer-edition'
 let g:mkdp_page_title = '「${name}」'
+let g:python3_host_prog = 1
+let g:coc_watch_extensions = 1
 
 " Set Display
 set number
