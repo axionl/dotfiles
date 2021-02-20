@@ -5,7 +5,7 @@ switch-to-activity-3a2a2d41-a419-490a-a68f-d4d017147cd0=none,none,Switch to acti
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Next Keyboard Layout=Ctrl+Alt+K,Ctrl+Alt+K,Switch to Next Keyboard Layout
-_k_friendly_name=Keyboard Layout Switcher
+_k_friendly_name=KWin
 
 [kaccess]
 Toggle Screen Reader On and Off=,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -15,7 +15,7 @@ _k_friendly_name=Accessibility
 Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
 Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
 Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Toggle Touchpad
-_k_friendly_name=Touchpad
+_k_friendly_name=KWin
 
 [kded5]
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
@@ -133,10 +133,10 @@ Window Minimize=Meta+PgDown,Meta+PgDown,Minimize Window
 Window Move=none,none,Move Window
 Window No Border=none,none,Hide Window Border
 Window On All Desktops=none,none,Keep Window on All Desktops
-Window One Desktop Down=none,none,Window One Desktop Down
-Window One Desktop Up=none,none,Window One Desktop Up
-Window One Desktop to the Left=none,none,Window One Desktop to the Left
-Window One Desktop to the Right=none,none,Window One Desktop to the Right
+Window One Desktop Down=none,Meta+Ctrl+Shift+Down,Window One Desktop Down
+Window One Desktop Up=none,Meta+Ctrl+Shift+Up,Window One Desktop Up
+Window One Desktop to the Left=none,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop to the Right=none,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
 Window Pack Down=none,none,Pack Window Down
 Window Pack Left=none,none,Pack Window to the Left
@@ -176,9 +176,9 @@ Window to Desktop 7=none,none,Window to Desktop 7
 Window to Desktop 8=none,none,Window to Desktop 8
 Window to Desktop 9=none,none,Window to Desktop 9
 Window to Next Desktop=none,none,Window to Next Desktop
-Window to Next Screen=none,none,Window to Next Screen
+Window to Next Screen=none,Meta+Shift+Right,Window to Next Screen
 Window to Previous Desktop=none,none,Window to Previous Desktop
-Window to Previous Screen=none,none,Window to Previous Screen
+Window to Previous Screen=none,Meta+Shift+Left,Window to Previous Screen
 Window to Screen 0=none,none,Window to Screen 0
 Window to Screen 1=none,none,Window to Screen 1
 Window to Screen 2=none,none,Window to Screen 2
@@ -250,6 +250,8 @@ _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
+pausemedia=Media Pause,Media Pause,Pause media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
