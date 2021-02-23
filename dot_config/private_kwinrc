@@ -18,6 +18,11 @@ Name_2=New Desktop
 Number=2
 Rows=1
 
+[DrmOutputs][728a0778f2][728a0778f2]
+Mode=1920x1080_60000
+Scale=1
+Transform=normal
+
 [Effect-Blur]
 BlurStrength=8
 NoiseStrength=2
@@ -32,8 +37,8 @@ Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [NightColor]
 Active=true
-LatitudeAuto=23.0501
-LongitudeAuto=112.457
+LatitudeAuto=26.891
+LongitudeAuto=112.6145
 
 [Plugins]
 blurEnabled=true
@@ -56,10 +61,8 @@ LayoutName=thumbnail_grid
 LayoutName=thumbnail_grid
 
 [Windows]
-BorderlessMaximizedWindows=true
+BorderlessMaximizedWindows=false
 
 [org.kde.kdecoration2]
 BorderSize=None
 BorderSizeAuto=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Orchis
