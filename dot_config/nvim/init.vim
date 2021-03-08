@@ -62,6 +62,11 @@ colorscheme sonokai
 set timeoutlen=500
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
+let mapleader = " "
+map <leader>h :wincmd h<CR>
+map <leader>j :wincmd j<CR>
+map <leader>k :wincmd k<CR>
+map <leader>l :wincmd l<CR>
 nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
