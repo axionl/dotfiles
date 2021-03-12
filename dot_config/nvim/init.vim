@@ -8,7 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
-Plug 'sainnhe/sonokai'
+Plug 'arcticicestudio/nord-vim'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'rust-lang/rust.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
@@ -48,15 +48,10 @@ if has('termguicolors')
 set termguicolors
 endif
 
-let g:sonokai_style = 'maia'
-let g:sonokai_enable_italic = 1
-let g:sonokai_transpartent_background = 1
-let g:sonokai_better_performance = 1
-let g:sonokai_current_word = 'bold'
-let g:airline_theme = 'sonokai'
+let g:airline_theme = 'nord'
 let g:airline#extensions#tabline#enabled = 1
 
-colorscheme sonokai
+colorscheme nord
 
 " Set Key map
 set timeoutlen=500
